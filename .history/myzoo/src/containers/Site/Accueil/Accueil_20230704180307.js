@@ -4,15 +4,11 @@ import banderole from "../../../assets/images/banderole.png";
 import logo from "../../../assets/images/logo.png";
 
 class  Accueil extends Component{//Composant STATEFUL qui va être récupérer par Site.js
-    componentDidMount = () => {//Fonction qui va être lancé quand le composant est montée, ici, on va mettre un titre pour la page onglet
-        document.title = "Parc d'animaux my Zoo";
-    }
-
     render() {
         return (
            <div>
            <img src={banderole} alt="banderole" className="img-fluid"/>
-             <TitreH1> Bienvenue sur le parc d'animaux My Zoo</TitreH1>
+             <TitreH1> Accueil</TitreH1>
 
              <div className="container">
              <p>
@@ -49,9 +45,7 @@ class  Accueil extends Component{//Composant STATEFUL qui va être récupérer p
                cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié
                 </div>
 
-                <div className="col-12 col-md-6">
-                        <img src={logo} alt="logo du site" className= "img-fluid"></img>
-                </div>
+                
 
             </div>
              </div>

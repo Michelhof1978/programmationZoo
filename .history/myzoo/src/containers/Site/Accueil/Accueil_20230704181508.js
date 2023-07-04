@@ -4,8 +4,8 @@ import banderole from "../../../assets/images/banderole.png";
 import logo from "../../../assets/images/logo.png";
 
 class  Accueil extends Component{//Composant STATEFUL qui va être récupérer par Site.js
-    componentDidMount = () => {//Fonction qui va être lancé quand le composant est montée, ici, on va mettre un titre pour la page onglet
-        document.title = "Parc d'animaux my Zoo";
+    componentDidMount = () => {//Fonction qui va être lancé quand le composant est montée
+
     }
 
     render() {
