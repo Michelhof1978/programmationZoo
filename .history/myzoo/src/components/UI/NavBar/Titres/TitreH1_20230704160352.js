@@ -1,0 +1,1 @@
+//Composant de type staless

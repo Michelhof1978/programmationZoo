@@ -18,11 +18,11 @@ const Navbar = (props) => (//COMPOSANT STATELESS
       <ul className="navbar-nav me-auto">
 
         <li className="nav-item">
-          <NavLink to="/" exact className="nav-link">Accueil</NavLink>
+          <NavLink to="/" className="nav-link">Accueil</NavLink>
         </li>
 
         <li className="nav-item">
-         <NavLink to="/contact" exact className="nav-link">Contact</NavLink>
+         <NavLink to="/contact" className="nav-link">Contact</NavLink>
         </li>
         </ul>
     </div>
@@ -31,7 +31,6 @@ const Navbar = (props) => (//COMPOSANT STATELESS
 </nav>
 
     </>
-);//grâce à NavLink pas de rechargement de page
-//exact = La page choisi de la navbar restera en evidence lors du clic de la page
+);
 
 export default Navbar;

@@ -32,6 +32,6 @@ const Navbar = (props) => (//COMPOSANT STATELESS
 
     </>
 );//grâce à NavLink pas de rechargement de page
-//exact = La page choisi de la navbar restera en evidence lors du clic de la page
+//exact = 
 
 export default Navbar;

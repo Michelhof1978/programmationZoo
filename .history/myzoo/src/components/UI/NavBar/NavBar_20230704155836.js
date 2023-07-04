@@ -22,7 +22,7 @@ const Navbar = (props) => (//COMPOSANT STATELESS
         </li>
 
         <li className="nav-item">
-         <NavLink to="/contact" exact className="nav-link">Contact</NavLink>
+         <NavLink to="/contact" className="nav-link">Contact</NavLink>
         </li>
         </ul>
     </div>
@@ -32,6 +32,5 @@ const Navbar = (props) => (//COMPOSANT STATELESS
 
     </>
 );//grâce à NavLink pas de rechargement de page
-//exact = La page choisi de la navbar restera en evidence lors du clic de la page
 
 export default Navbar;

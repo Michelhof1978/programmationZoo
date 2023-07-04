@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import TitreH1 from "../../../components/UI/NavBar/Titres/TitreH1";
+import titreH1 from "../../../components/UI/NavBar/Titre/TitreH1";
 
 
 class  Accueil extends Component{//Composant STATEFUL qui va être récupérer par Site.js
     render() {
         return (
            <div>
-             <TitreH1> Accueil</TitreH1>
+             <titreH1> Accueil</titreH1>
            </div>
         );
     }

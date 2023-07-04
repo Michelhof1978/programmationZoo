@@ -1,12 +1,12 @@
 //Site.js va gérer le site
 import React, { Component } from 'react';
 import Navbar from '../../components/UI/NavBar/NavBar';
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//composants Router, Routes et Route à partir de la bibliothèque React Router.
 
-// //composants Router, Routes et Route à partir de la bibliothèque React Router.
-// Router est le composant principal qui englobe toute l'application et fournit le contexte pour le routage.
-// Routes est le composant qui englobe toutes les routes et permet de les définir.
-// Route est utilisé pour définir une route spécifique.
+Router est le composant principal qui englobe toute l'application et fournit le contexte pour le routage.
+Routes est le composant qui englobe toutes les routes et permet de les définir.
+Route est utilisé pour définir une route spécifique.
 
 import Accueil from './Accueil/Accueil';
 
@@ -15,12 +15,10 @@ class  Site extends Component{//Composant STATEFUL qui va être gérer par App.j
         return (
             <>
               <Navbar/>
-          <Routes> {/* Utilisez le composant Routes pour englober les routes */}
-              <Route path="/" element={<Accueil />}  />
-              <Route path="/contact" element={<h1>Page de Contact</h1>}  />
-              <Route path="*" element={<h1>erreur 404</h1>} />
+              <Routes> {/* Utilisez le composant Routes pour englober les routes */}
+            <Route path="/" element={<Accueil />} /> {/* Utilisez l'attribut element pour définir le composant à rendre */}
           </Routes>
-              
+                Site des animaux
               
             </>
         );//EN JSX

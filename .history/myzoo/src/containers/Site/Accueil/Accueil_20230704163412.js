@@ -6,7 +6,7 @@ class  Accueil extends Component{//Composant STATEFUL qui va être récupérer p
     render() {
         return (
            <div>
-             <TitreH1> Accueil</TitreH1>
+             <titreH1> Accueil</titreH1>
            </div>
         );
     }

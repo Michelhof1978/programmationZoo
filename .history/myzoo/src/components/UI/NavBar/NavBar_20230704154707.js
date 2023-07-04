@@ -1,6 +1,5 @@
 import React from "react"; 
 import logo from "../../../assets/images/logo.png";
-import {NavLink} from "react-router-dom";//Composant Pour éviter que la page se recharge à chaque fois
 
 const Navbar = (props) => (//COMPOSANT STATELESS
     <>
@@ -16,13 +15,13 @@ const Navbar = (props) => (//COMPOSANT STATELESS
 
     <div className="collapse navbar-collapse" id="navbarColor01">
       <ul className="navbar-nav me-auto">
-
+      
         <li className="nav-item">
-          <NavLink to="/" exact className="nav-link">Accueil</NavLink>
+          <a className="nav-link active" href="/">Accueil </a>
         </li>
 
         <li className="nav-item">
-         <NavLink to="/contact" exact className="nav-link">Contact</NavLink>
+          <a className="nav-link active" href="/">Accueil </a>
         </li>
         </ul>
     </div>
@@ -31,7 +30,6 @@ const Navbar = (props) => (//COMPOSANT STATELESS
 </nav>
 
     </>
-);//grâce à NavLink pas de rechargement de page
-//exact = La page choisi de la navbar restera en evidence lors du clic de la page
+);
 
 export default Navbar;

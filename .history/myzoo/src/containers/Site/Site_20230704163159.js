@@ -1,14 +1,14 @@
 //Site.js va gérer le site
 import React, { Component } from 'react';
 import Navbar from '../../components/UI/NavBar/NavBar';
-import { BrowserRouter as Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // //composants Router, Routes et Route à partir de la bibliothèque React Router.
 // Router est le composant principal qui englobe toute l'application et fournit le contexte pour le routage.
 // Routes est le composant qui englobe toutes les routes et permet de les définir.
 // Route est utilisé pour définir une route spécifique.
 
-import Accueil from './Accueil/Accueil';
+import Acc';
 
 class  Site extends Component{//Composant STATEFUL qui va être gérer par App.js
     render() {

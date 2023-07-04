@@ -1,0 +1,2 @@
+//Composant de type stateless
+
