@@ -25,7 +25,7 @@ class  Site extends Component{//Composant STATEFUL qui va être gérer par App.j
               
             </>
         );//EN JSX
-    }//Error = type = //On rajoute une propriété type qui sera type 404 et ajouté à la suite du H1
+    }//Error
 }
 
 export default Site;
