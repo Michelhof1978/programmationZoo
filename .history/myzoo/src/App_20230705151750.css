@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Indie Flower', cursive;
+}
+
+/* site.js */
+.site{
+    min-height: 100vh;/* Taille minimal à 100 % de la hauteur de l'écran */
+    margin-bottom: -140px;/*Pour remonter le footer par rapport au contenu de la page et éviter qu'il y a la scroll bar d affichée*/
+}
+
+/* FOOTER */
+footer, .minSite{/* minSite sera ds une div vide ds site.js, cela permettra au footer de rester bien en bas et pas grignotter le contenu au dessus du footer*/
+    height: 140px;
+}
+
+.imgFB, .imgTwitter {
+    height: 75px;
+}
+
+.imgYoutube{
+    height: 25px;
+}
+
+@media only screen and {max-width: 720px;}

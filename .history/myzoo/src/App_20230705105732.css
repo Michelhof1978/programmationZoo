@@ -1,0 +1,10 @@
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Indie Flower', cursive;
+}
+
+/* site.js */
+.site{
+    min-height: 100vh;/* Taille minimal à 100 % de la hauteur de l'écran */
+}
+
+/* f */
