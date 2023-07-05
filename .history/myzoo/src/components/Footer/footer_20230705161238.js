@@ -34,8 +34,8 @@ const Footer = (props) => (
                 </div>
 
                 <div className="col-3">
-                <NavLink to="/mentionLegales" className={["nav-link", "p-0", "m-0", Classes.p_footerLink].join(" ")}>mentions légales</NavLink>
-                    <a href="mailto:contact@myzoo.com" className={["nav-link", "p-0", "m-0", Classes.p_footerLink].join(" ")}>contact@myzoo.com</a>
+                <NavLink to="/mentionLegales" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}>mentions légales</NavLink>
+                    <a href="mailto:contact@myzoo.com" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}>contact@myzoo.com</a>
                 </div>
            </div>
         </footer>

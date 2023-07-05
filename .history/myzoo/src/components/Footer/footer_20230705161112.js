@@ -4,7 +4,8 @@ import twitter from "../../assets/images/footer/twitter.png";
 import youtube from "../../assets/images/footer/youtube.png";
 
 import {NavLink} from "react-router-dom";
-import Classes from '../../components/Footer/Footer.module.css';//Module css pour mentions légales
+import classes from "./";
+import Footer from '../../components/Footer/Footer.module.css';
 
 const Footer = (props) => (
     <>
@@ -34,8 +35,8 @@ const Footer = (props) => (
                 </div>
 
                 <div className="col-3">
-                <NavLink to="/mentionLegales" className={["nav-link", "p-0", "m-0", Classes.p_footerLink].join(" ")}>mentions légales</NavLink>
-                    <a href="mailto:contact@myzoo.com" className={["nav-link", "p-0", "m-0", Classes.p_footerLink].join(" ")}>contact@myzoo.com</a>
+                <NavLink to="/mentionLegales" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}>mentions légales</NavLink>
+                    <a href="mailto:contact@myzoo.com" className={["nav-link", "p-0", "m-0", classes.p_footerLink].join(" ")}>contact@myzoo.com</a>
                 </div>
            </div>
         </footer>

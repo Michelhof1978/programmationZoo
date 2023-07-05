@@ -4,7 +4,7 @@ import twitter from "../../assets/images/footer/twitter.png";
 import youtube from "../../assets/images/footer/youtube.png";
 
 import {NavLink} from "react-router-dom";
-import Classes from '../../components/Footer/Footer.module.css';//Module css pour mentions légales
+import Classes from '../components/Footer/Footer.module.css';//Module css pour mentions légales
 
 const Footer = (props) => (
     <>

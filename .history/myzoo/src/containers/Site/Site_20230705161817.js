@@ -1,7 +1,7 @@
 //Site.js va gérer le site
 import React, { Component } from 'react';
 import Navbar from '../../components/UI/NavBar/NavBar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Error from './Error/Error';
 import Footer from './../components/Footer/Footer';
 
@@ -18,7 +18,7 @@ class  Site extends Component{//Composant STATEFUL qui va être gérer par App.j
             <>
             <div className='site'>
             <Navbar/>
-          <Routes>
+          <Routes> {/* Utilisez le composant Routes pour englober les routes */}
               <Route path="/" element={<Accueil />}  />
               <Route path="/contact" element={<h1>Page de Contact</h1>}  />
               <Route path="/mentionLegales" element={<h1>Mentions légales</h1>}  />
