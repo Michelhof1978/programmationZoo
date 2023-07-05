@@ -29,7 +29,7 @@ class  Accueil extends Component{//Composant STATEFUL qui va être récupérer p
                cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié
              </p>
 
-            <div className="row no-gutters align-items-center">
+            <div className="row  align-items-center">
 
                 <div className="col-12 col-md-6">
                         <img src={logo} alt="logo du site" className= "img-fluid"></img>

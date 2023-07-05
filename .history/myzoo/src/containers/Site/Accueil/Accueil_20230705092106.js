@@ -90,39 +90,3 @@ export default Accueil;
 
 // À partir de React 16.3, `componentDidMount` peut être remplacé par le hook `useEffect` avec un tableau de dépendances vide (`[]`) 
 // pour obtenir un comportement équivalent dans les composants fonctionnels.
-// ---------------------------------------------------------------------------------------------------------------------------
-// Dans le contexte de Bootstrap, les gutters font référence à l'espace horizontal entre les colonnes d'une grille Bootstrap. 
-// Ils permettent de créer des marges entre les colonnes adjacentes pour améliorer la mise en page et l'espacement visuel.
-
-// Bootstrap propose plusieurs classes de gutters que vous pouvez utiliser pour ajuster l'espace entre les colonnes. 
-// Voici quelques-unes des classes les plus couramment utilisées :
-
-// - `gutter`: Cette classe est utilisée pour ajouter un espace par défaut (gutter) entre les colonnes. Elle ajoute une marge de 
-// 1,5 rem (24 pixels) de chaque côté des colonnes.
-
-// - `gutter-sm`: Cette classe ajoute un espace plus petit (small gutter) entre les colonnes. Elle ajoute une marge de 0,75 rem 
-// (12 pixels) de chaque côté des colonnes.
-
-// - `gutter-md`: Cette classe ajoute un espace moyen (medium gutter) entre les colonnes. Elle ajoute une marge de 1 rem (16 pixels)
-//  de chaque côté des colonnes.
-
-// - `gutter-lg`: Cette classe ajoute un espace plus grand (large gutter) entre les colonnes. Elle ajoute une marge de 2 rem 
-// (32 pixels) de chaque côté des colonnes.
-
-// - `gutter-xl`: Cette classe ajoute un espace extra-large (extra-large gutter) entre les colonnes. Elle ajoute une marge de 3 rem
-//  (48 pixels) de chaque côté des colonnes.
-
-// Pour utiliser ces classes de gutters, vous pouvez les ajouter à vos éléments de grille Bootstrap en les combinant avec les classes 
-// de colonnes. Par exemple :
-
-// ```html
-// <div class="row">
-//   <div class="col-6 gutter">Contenu de la colonne 1</div>
-//   <div class="col-6 gutter">Contenu de la colonne 2</div>
-// </div>
-// ```
-
-// Cela ajoutera un espace par défaut (gutter) de chaque côté des colonnes, créant ainsi un espacement horizontal entre les deux
-//  colonnes.
-
-// N'oubliez pas d'inclure la feuille de style Bootstrap appropriée dans votre projet pour utiliser ces classes de gutters.
