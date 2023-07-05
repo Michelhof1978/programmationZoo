@@ -15,7 +15,7 @@ const Error = (props) => (
 // avec props.bgColor qu'on a defini bg-danger
 export default Error;
 // props.children permet d'incorporer et de rendre dynamiquement le contenu transmis entre les balises d'ouverture et de fermeture 
-//d'un composant enfant. Cela permet une plus grande flexibilité et réutilisabilité des composants de application.
+//d'un composant enfant. Cela permet une plus grande flexibilité et réutilisabilité des composants d application.
 
 
 
