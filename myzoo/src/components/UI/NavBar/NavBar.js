@@ -18,16 +18,16 @@ const Navbar = (props) => (//COMPOSANT STATELESS
       <ul className="navbar-nav me-auto">
 
         <li className="nav-item">
-          <NavLink to="/" exact className="nav-link">Accueil</NavLink>
+          <NavLink to="/" exact={true.toString()} className="nav-link">Accueil</NavLink>
         </li>
 
         <li className="nav-item">
-          <NavLink to="/animaux" exact className="nav-link">Les Animaux</NavLink>
+          <NavLink to="/animaux" exact={true.toString()}  className="nav-link">Les Animaux</NavLink>
         </li>
 
 
         <li className="nav-item">
-         <NavLink to="/contact" exact className="nav-link">Contact</NavLink>
+         <NavLink to="/contact" exact={true.toString()}  className="nav-link">Contact</NavLink>
         </li>
         </ul>
     </div>
