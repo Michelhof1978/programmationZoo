@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import TitreH1 from '../../components/UI/NavBar/Titres/TitreH1';
 import axios from "axios";
-import animal from './Animal/Animal';
+import Animal from './Animal/Animal';
 class  Parc extends Component{//Récupération des données et instalation du module AXIOS npm install axios --save
 
         state = {
@@ -26,8 +26,8 @@ class  Parc extends Component{//Récupération des données et instalation du mo
             <div className='container'>
                 {
                     this.state.animaux &&//Si this.state.animaux est vrai et donc null alors on fait le code ci-dessous
-                    this.state.animaux.map(animal =>{//Si c'est vrai, on va parcourir le tableau grâce à map et on va récuperre chacune des lignes du tableau animal
-                        return <h1>{animal.id} - {animal.nom}</h1> //on va utiliser les spraid operator pour récupérer toutes les infos de l animal via les props
+                    this.state.animaux.map(Animal =>{//Si c'est vrai, on va parcourir le tableau grâce à map et on va récuperre chacune des lignes du tableau animal
+                        return <Animal{...animal}/> //on va utiliser les spraid operator pour récupérer toutes les infos du composant animal via les props
                     })
                 }
             </div>

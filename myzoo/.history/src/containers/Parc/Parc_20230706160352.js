@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import TitreH1 from '../../components/UI/NavBar/Titres/TitreH1';
 import axios from "axios";
-import animal from './Animal/Animal';
+import nimal from './Animal/Animal';
 class  Parc extends Component{//Récupération des données et instalation du module AXIOS npm install axios --save
 
         state = {
