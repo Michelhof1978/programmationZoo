@@ -52,6 +52,11 @@ ERROR.JS
 ACCUEIL.JS
 -Import titreH1/Banderole + logo
 -Fonction componentDidMount pour mettre le titre de la page sur l onglet du site
+
+PARC.JS COMMUNICATION AVEC LA BDD
+Récupération des données grâce au State
+-Install: npm install axios --save
+
 --------------------------------------------------------------
 APP.JS
 Création du Composant racine qui agit comme le conteneur principal de tous les autres composants l'application

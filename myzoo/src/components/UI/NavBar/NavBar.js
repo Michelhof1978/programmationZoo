@@ -22,6 +22,11 @@ const Navbar = (props) => (//COMPOSANT STATELESS
         </li>
 
         <li className="nav-item">
+          <NavLink to="/animaux" exact className="nav-link">Les Animaux</NavLink>
+        </li>
+
+
+        <li className="nav-item">
          <NavLink to="/contact" exact className="nav-link">Contact</NavLink>
         </li>
         </ul>

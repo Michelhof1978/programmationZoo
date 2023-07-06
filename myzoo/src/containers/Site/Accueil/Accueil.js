@@ -12,7 +12,7 @@ class  Accueil extends Component{//Composant STATEFUL qui va être récupérer p
         return (
            <div>
            <img src={banderole} alt="banderole" className="img-fluid"/>
-             <TitreH1> Bienvenue sur le parc d'animaux My Zoo</TitreH1>
+             <TitreH1 bgColor="bg-success"> Bienvenue sur le parc d'animaux My Zoo</TitreH1>
 
              <div className="container">
              <p>
