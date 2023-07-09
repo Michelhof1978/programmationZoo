@@ -29,7 +29,7 @@ const animal = (props) => (
             <div className="card-body">
                 <h3>Continents : </h3>
                 {
-                    props.continents.map(continent => {//map = parcourir un tableau et récupérer tous les continents et les retourner un à un
+                    props.continents.map(continent => {
                         let colorBtn = "";
                         switch(continent.idContinent){
                             case "1" : colorBtn="btn-primary";
@@ -47,7 +47,7 @@ const animal = (props) => (
                         return <Bouton typeBtn={colorBtn} css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
                     })
                 }
-            </div> 
+            </div> */}
         </div>
     </>
 );
