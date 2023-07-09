@@ -1,8 +1,8 @@
 //AFFICHAGE DES ANIMAUX GRACE AUX DONNEES RECUPEREES DS PARC.JS
 import React from "react";
-import Bouton from "../../../../components/UI/Bouton/Bouton";
+import Bouton from "../../../components/UI/Bouton/Bouton";
 
-const Animal = (props) => (
+const animal = (props) => (
     <>
         <div className="card mb-3">
 
@@ -31,8 +31,8 @@ const Animal = (props) => (
                 {
                     props.continents.map(continent => {//map = parcourir un tableau et récupérer tous les continents et les retourner un à un
                         let colorBtn = "";
-                        switch(continent.idContinent){//Suivant l'id du continent que l on va parcourir, on va lui attribuer une couleur
-                            case "1" : colorBtn="btn-primary";//Pour les 5 continents, on va lui attribuer une couleur
+                        switch(continent.idContinent){
+                            case "1" : colorBtn="btn-primary";
                             break;
                             case "2" : colorBtn="btn-danger";
                             break;
@@ -42,15 +42,15 @@ const Animal = (props) => (
                             break;
                             case "5" : colorBtn="btn-info";
                             break;
-                            default : colorBtn = "btn-secondary";//Pour un continent qui n'a pas de couleur attribué, on lui attribue la couleur par défaut
+                            default : colorBtn = "btn-secondary";
                         }
-                        //On récupére ci-dessus tous les continents et on les return sous forme de bouton, ainsi tous les continents qui ont été crée sur le serveur seront affichés sous forme de bouton avec des couleurs différentes grâce au switch
+                        //On récupére ci-dessus tous les continents et on les return sous forme de bouton, ainsi tous les continents seront affichés
                         return <Bouton typeBtn={colorBtn} css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
-                    })//Pour la propriété Css, ça ne sera pas className car c'est une propriété spécifique à React, on va donc mettre css car nous avons défini la propriété cssn ds le composant Bouton
+                    })
                 }
             </div> 
         </div>
     </>
 );
 
-export default Animal;
+export default animal;

@@ -18,9 +18,6 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                     // console.log(reponse);
                     this.setState({animaux:Object.values(reponse.data)})//Fonction setState qui va permettre de mettre à jour le composant et de mettre à jours la propriété animaux de notre state, on va donc modifier la partie animauxpour y mettre  les données  que l on va récupérer ds reponse.data//sans Object.values , le rendu des données sera sous format object et grâce à Object.values, il retournera un tableau
                 })
-                .catch(error => {//Si erreur de transmission des données, on va afficher l'erreur plus en détail ds la console grâce à catch error
-                    console.error(error);
-                  });
         }
             
     render() {

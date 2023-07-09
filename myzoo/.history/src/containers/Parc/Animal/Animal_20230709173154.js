@@ -1,8 +1,8 @@
 //AFFICHAGE DES ANIMAUX GRACE AUX DONNEES RECUPEREES DS PARC.JS
 import React from "react";
-import Bouton from "../../../../components/UI/Bouton/Bouton";
+import Bouton from "../../../components/UI/Bouton/Bouton";
 
-const Animal = (props) => (
+const animal = (props) => (
     <>
         <div className="card mb-3">
 
@@ -23,7 +23,7 @@ const Animal = (props) => (
              Récupération des propriétés de chaque animal */}
             <div className="card-body">
             {/* Composant Bouton qui pourra gérer les événements */}
-                <h3>Famille : <Bouton typeBtn="btn-primary">{props.famille.libelleFamille.toUpperCase()}</Bouton></h3>
+                <h3>Famille : <Buton typeBtn="btn-primary">{props.famille.libelleFamille.toUpperCase()}</Buton></h3>
                 <div>{props.famille.descriptionFamille}</div>
             </div>
             <div className="card-body">
@@ -53,4 +53,4 @@ const Animal = (props) => (
     </>
 );
 
-export default Animal;
+export default animal;

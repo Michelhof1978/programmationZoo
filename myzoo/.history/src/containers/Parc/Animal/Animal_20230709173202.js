@@ -1,8 +1,8 @@
 //AFFICHAGE DES ANIMAUX GRACE AUX DONNEES RECUPEREES DS PARC.JS
 import React from "react";
-import Bouton from "../../../../components/UI/Bouton/Bouton";
+import Bouton from "../../../components/UI/Bouton/Bouton";
 
-const Animal = (props) => (
+const animal = (props) => (
     <>
         <div className="card mb-3">
 
@@ -53,4 +53,4 @@ const Animal = (props) => (
     </>
 );
 
-export default Animal;
+export default animal;

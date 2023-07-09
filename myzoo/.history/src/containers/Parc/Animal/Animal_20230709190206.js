@@ -1,6 +1,7 @@
 //AFFICHAGE DES ANIMAUX GRACE AUX DONNEES RECUPEREES DS PARC.JS
 import React from "react";
-import Bouton from "../../../../components/UI/Bouton/Bouton";
+ln -s ../../../components/UI/Bouton/Bouton node_modules/Bouton
+
 
 const Animal = (props) => (
     <>

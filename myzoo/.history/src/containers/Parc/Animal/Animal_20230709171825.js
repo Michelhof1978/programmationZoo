@@ -1,8 +1,8 @@
 //AFFICHAGE DES ANIMAUX GRACE AUX DONNEES RECUPEREES DS PARC.JS
 import React from "react";
-import Bouton from "../../../../components/UI/Bouton/Bouton";
+import Bouton from "../../../components/UI/Bouton/Bouton";
 
-const Animal = (props) => (
+const animal = (props) => (
     <>
         <div className="card mb-3">
 
@@ -45,7 +45,7 @@ const Animal = (props) => (
                             default : colorBtn = "btn-secondary";//Pour un continent qui n'a pas de couleur attribué, on lui attribue la couleur par défaut
                         }
                         //On récupére ci-dessus tous les continents et on les return sous forme de bouton, ainsi tous les continents qui ont été crée sur le serveur seront affichés sous forme de bouton avec des couleurs différentes grâce au switch
-                        return <Bouton typeBtn={colorBtn} css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
+                        return <Bouton typeBtn={colorBtn} props.css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
                     })//Pour la propriété Css, ça ne sera pas className car c'est une propriété spécifique à React, on va donc mettre css car nous avons défini la propriété cssn ds le composant Bouton
                 }
             </div> 
@@ -53,4 +53,4 @@ const Animal = (props) => (
     </>
 );
 
-export default Animal;
+export default animal;
