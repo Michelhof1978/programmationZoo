@@ -17,8 +17,6 @@ const animal = (props) => (
             <div className="text-center" style={{"height": "100px"}} >
                 <img src={props.image} alt={props.nom} className="img-fluid h-100"/>
             </div>
-
-            {/* La méthode toUpperCase() est une fonction JavaScript qui permet de convertir une chaîne de caractères en majuscules. */}
             <div className="card-body">
                 <h3>Famille : <Bouton typeBtn="btn-primary">{props.famille.libelleFamille.toUpperCase()}</Bouton></h3>
                 <div>{props.famille.descriptionFamille}</div>

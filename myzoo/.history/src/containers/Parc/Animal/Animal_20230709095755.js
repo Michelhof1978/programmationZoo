@@ -1,6 +1,6 @@
 //AFFICHAGE DES ANIMAUX GRACE AUX DONNEES RECUPEREES DS PARC.JS
 import React from "react";
-// import Bouton from "../../../..//components/UI/Bouton/Bouton";
+import Bouton from "../../../..//components/UI/Bouton/Bouton";
 
 const animal = (props) => (
     <>
@@ -17,13 +17,11 @@ const animal = (props) => (
             <div className="text-center" style={{"height": "100px"}} >
                 <img src={props.image} alt={props.nom} className="img-fluid h-100"/>
             </div>
-
-            {/* La méthode toUpperCase() est une fonction JavaScript qui permet de convertir une chaîne de caractères en majuscules. */}
             <div className="card-body">
                 <h3>Famille : <Bouton typeBtn="btn-primary">{props.famille.libelleFamille.toUpperCase()}</Bouton></h3>
                 <div>{props.famille.descriptionFamille}</div>
             </div>
-            {/* <div className="card-body">
+            <div className="card-body">
                 <h3>Continents : </h3>
                 {
                     props.continents.map(continent => {
@@ -44,7 +42,7 @@ const animal = (props) => (
                         return <Bouton typeBtn={colorBtn} css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
                     })
                 }
-            </div> */}
+            </div>
         </div>
     </>
 );
