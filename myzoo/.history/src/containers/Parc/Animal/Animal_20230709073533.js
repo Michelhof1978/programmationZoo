@@ -5,15 +5,11 @@ import Bouton from "../../../..//components/UI/Bouton/Bouton";
 const animal = (props) => (
     <>
         <div className="card mb-3">
-
-        {/* Affichage de l'Id et du nom de l animal en h3 */}
+        Affichage de 
             <h3 className="card-header">{props.id} - {props.nom}</h3>
-
-         {/* Description de l animal */}
             <div className="card-body">
                 <div className="card-text">{props.description}</div>
             </div>
-
             <div className="text-center" style={{"height": "100px"}} >
                 <img src={props.image} alt={props.nom} className="img-fluid h-100"/>
             </div>

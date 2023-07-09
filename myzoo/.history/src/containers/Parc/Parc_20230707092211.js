@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 import TitreH1 from '../../components/UI/NavBar/Titres/TitreH1';
 import axios from "axios";
-import Animal from './Animal/Animal';
+import animal from './Animal/Animal';
 class  Parc extends Component{//Récupération des données et instalation du module AXIOS npm install axios --save
 
         state = {
@@ -24,21 +24,12 @@ class  Parc extends Component{//Récupération des données et instalation du mo
             <>
             <TitreH1 bgColor="bg-success">Les animaux du parc</TitreH1>
             <div className='container'>
-              
-            <div className="row no-gutters">
-                        {
-                            this.state.animaux && //Si this.state.animaux est vrai et donc null alors on fait le code ci-dessous
-                            this.state.animaux.map(animal => {//Si c'est vrai, on va parcourir le tableau grâce à map et on va récuperre chacune des lignes du tableau animal
-                                return (//Ds chacunes des colonnes indiquées ci-dessous, on va afficher le un certains nombre d animaux suivant la taille de l'écran //key={animal.id} doit être déclaré au plus haut de notre map car sinon, ça va générer des erreurs
-                                    //On va afficher tous les infos de l animal par Id avec le spread operator(on enverra toutes les propriétés de l object animal à travers les props), si ce n était qu'une seule info à afficher, on aurait fait: animal.id, animal.nom...
-                                    <div className="col-12 col-md-6 col-xl-4" key={animal.id}>
-                                        <Animal {...animal}/>
-                                    </div>
-                                )
-                            })
-                        }
-                    </div>
-
+                {
+                    this.state.animaux &&//Si this.state.animaux est vrai et donc null alors on fait le code ci-dessous
+                    this.state.animaux.map(animal =>{//Si c'est vrai, on va parcourir le tableau grâce à map et on va récuperre chacune des lignes du tableau animal
+                        return <an
+                    })
+                }
             </div>
             </>
         );

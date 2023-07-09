@@ -9,7 +9,7 @@ const animal = (props) => (
         {/* Affichage de l'Id et du nom de l animal en h3 */}
             <h3 className="card-header">{props.id} - {props.nom}</h3>
 
-         {/* Description de l animal */}
+         {/*  */}
             <div className="card-body">
                 <div className="card-text">{props.description}</div>
             </div>

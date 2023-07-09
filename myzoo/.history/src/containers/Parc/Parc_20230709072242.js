@@ -39,6 +39,16 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                         }
                     </div>
 
+                {/* <div className='row no-gutters'>
+                {
+                    this.state.animaux &&//Si this.state.animaux est vrai et donc null alors on fait le code ci-dessous
+                    this.state.animaux.map(animal =>{//Si c'est vrai, on va parcourir le tableau grâce à map et on va récuperre chacune des lignes du tableau animal
+                        return <Animal {...animal} key={animal.id}/>
+                        
+                    })
+                }
+                </div> */}
+               
             </div>
             </>
         );

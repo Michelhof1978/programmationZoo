@@ -6,7 +6,7 @@ import youtube from "../../assets/images/footer/youtube.png";
 import {NavLink} from "react-router-dom";
 import styles from "./Footer.module.css";//Module css pour mentions légales
 
-const Footer = (props) => (//A CORRIGER LES PROBLEMES DE MODULES!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const Footer = (props) => (
     <>
         <footer className="bg-primary ">
             <div className="text-white text-center">
@@ -33,7 +33,7 @@ const Footer = (props) => (//A CORRIGER LES PROBLEMES DE MODULES!!!!!!!!!!!!!!!!
                
                 </div>
 
-                <div className="col-3 ">
+                <div className="col-3 ">///
                 <NavLink to="/mentionLegales" className={`nav-link p-0 m-0 ${styles.footerLink}`}>Mentions légales</NavLink>
                     <a href="mailto:contact@myzoo.com" className={styles.footerLink}>contact@myzoo.com</a>
                 </div>

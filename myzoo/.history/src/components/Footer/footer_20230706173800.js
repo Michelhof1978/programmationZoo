@@ -6,7 +6,7 @@ import youtube from "../../assets/images/footer/youtube.png";
 import {NavLink} from "react-router-dom";
 import styles from "./Footer.module.css";//Module css pour mentions légales
 
-const Footer = (props) => (//A CORRIGER LES PROBLEMES DE MODULES!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+const Footer = (props) => (//A CORRIGER LES PROBLEMES DE 
     <>
         <footer className="bg-primary ">
             <div className="text-white text-center">
