@@ -17,22 +17,14 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                     // console.log(reponse);
                     this.setState({animaux:Object.values(reponse.data)})//Fonction setState qui va permettre de mettre à jour le composant et de mettre à jours la propriété animaux de notre state, on va donc modifier la partie animauxpour y mettre  les données  que l on va récupérer ds reponse.data//sans Object.values , le rendu des données sera sous format object et grâce à Object.values, il retournera un tableau
                 })
-
-                .catch(error => {//catch va permettre d afficher les erreur en détail s'il y en a
-                    console.log(error);
-                });
         }
 
         handleSelectionFamille = (idFamille) => {//Fonction qui devra se lancer lors du clic sur bouton et devra transferer cette fonction au niveau du composant Animal (spread operator ...Animal) et qui devra récupérer l'id de la famille
-            console.log(`Demande de ${idFamille}`);
+            console.log (`Demande de ${idFamille}`);
         }
 
-        handleSelectionContinent = (idContinent) => {//Fonction qui devra se lancer lors du clic sur bouton et devra transferer cette fonction au niveau du composant Animal (spread operator ...Animal) et qui devra récupérer l'id du continent
-            console.log (`Demande de ${idContinent}`);
-       
-        }
-            render() {
-                
+        
+    render() {
         return (
             <>
             <TitreH1 bgColor="bg-success">Les animaux du parc</TitreH1>
@@ -46,13 +38,8 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                                     //On va afficher tous les infos de l animal par Id avec le spread operator(on enverra toutes les propriétés de l object animal à travers les props), si ce n était qu'une seule info à afficher, on aurait fait: animal.id, animal.nom...
                                     <div className="col-12 col-md-6 col-xl-4" key={animal.id}>
                                     {/* //ON ENVOIE TOUTES LES PROPRIETES DE L OBJET ANIMAL A TRAVERS LES PROPS GRACE AU SPREAD OPERATOR */}
-                                        <Animal {...animal} 
-                                        
-                                        filtreFamille={this.handleSelectionFamille}
-                                        
-                                        filtreContinent={this.handleSelectionContinent}
-
-                                        />{/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
+                                        <Animal {...animal} filtreFamille={this.handleSelectionFamille}/>
+                                        {/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
                                     </div>
                                 )
                             })

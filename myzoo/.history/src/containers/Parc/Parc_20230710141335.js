@@ -52,7 +52,7 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                                         
                                         filtreContinent={this.handleSelectionContinent}
 
-                                        />{/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
+                                        />
                                     </div>
                                 )
                             })
@@ -66,3 +66,4 @@ class  Parc extends Component{//Récupération des données et instalation du mo
 }
 
 export default Parc;
+{/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}

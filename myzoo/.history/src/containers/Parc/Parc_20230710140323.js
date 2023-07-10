@@ -24,11 +24,11 @@ class  Parc extends Component{//Récupération des données et instalation du mo
         }
 
         handleSelectionFamille = (idFamille) => {//Fonction qui devra se lancer lors du clic sur bouton et devra transferer cette fonction au niveau du composant Animal (spread operator ...Animal) et qui devra récupérer l'id de la famille
-            console.log(`Demande de ${idFamille}`);
+            console.log ('Demande de ${idFamille}');
         }
 
         handleSelectionContinent = (idContinent) => {//Fonction qui devra se lancer lors du clic sur bouton et devra transferer cette fonction au niveau du composant Animal (spread operator ...Animal) et qui devra récupérer l'id du continent
-            console.log (`Demande de ${idContinent}`);
+            console.log ('Demande de ${idContinent}`);
        
         }
             render() {
@@ -49,10 +49,10 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                                         <Animal {...animal} 
                                         
                                         filtreFamille={this.handleSelectionFamille}
-                                        
+                                        {/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
                                         filtreContinent={this.handleSelectionContinent}
 
-                                        />{/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
+                                        />
                                     </div>
                                 )
                             })

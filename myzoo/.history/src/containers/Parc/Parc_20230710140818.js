@@ -28,7 +28,8 @@ class  Parc extends Component{//Récupération des données et instalation du mo
         }
 
         handleSelectionContinent = (idContinent) => {//Fonction qui devra se lancer lors du clic sur bouton et devra transferer cette fonction au niveau du composant Animal (spread operator ...Animal) et qui devra récupérer l'id du continent
-            console.log (`Demande de ${idContinent}`);
+            console.log(`Demande de ${idContinent}`);
+    }
        
         }
             render() {
@@ -42,21 +43,22 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                         {
                             this.state.animaux && //Si this.state.animaux est vrai et donc null alors on fait le code ci-dessous
                             this.state.animaux.map(animal => {//Si c'est vrai, on va parcourir le tableau grâce à map et on va récuperre chacune des lignes du tableau animal
-                                return (//Ds chacunes des colonnes indiquées ci-dessous, on va afficher le un certains nombre d animaux suivant la taille de l'écran //key={animal.id} doit être déclaré au plus haut de notre map car sinon, ça va générer des erreurs
+                                 (//Ds chacunes des colonnes indiquées ci-dessous, on va afficher le un certains nombre d animaux suivant la taille de l'écran //key={animal.id} doit être déclaré au plus haut de notre map car sinon, ça va générer des erreurs
                                     //On va afficher tous les infos de l animal par Id avec le spread operator(on enverra toutes les propriétés de l object animal à travers les props), si ce n était qu'une seule info à afficher, on aurait fait: animal.id, animal.nom...
                                     <div className="col-12 col-md-6 col-xl-4" key={animal.id}>
                                     {/* //ON ENVOIE TOUTES LES PROPRIETES DE L OBJET ANIMAL A TRAVERS LES PROPS GRACE AU SPREAD OPERATOR */}
-                                        <Animal {...animal} 
+                                        <Animal 
+                                        {...animal} 
                                         
                                         filtreFamille={this.handleSelectionFamille}
-                                        
+                                        {/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
                                         filtreContinent={this.handleSelectionContinent}
 
-                                        />{/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
+                                        />
                                     </div>
-                                )
-                            })
-                        }
+                                ))
+                            }
+                        
                     </div>
 
             </div>
