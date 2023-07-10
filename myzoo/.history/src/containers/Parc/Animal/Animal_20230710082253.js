@@ -30,7 +30,7 @@ const animal = (props) => (
                 <h3>Continents : </h3>
                 {
                     props.continents.map(continent => {//map = parcourir un tableau et récupérer tous les continents et les retourner un à un
-                        let colorBtn = "";//On initialise à vide la variable colorBtn
+                        let colorBtn = "";//On initialise à vide
                         switch(continent.idContinent){//Suivant l'id du continent que l on va parcourir, on va lui attribuer une couleur
                             case "1" : colorBtn="btn-primary";//Pour les 5 continents, on va lui attribuer une couleur
                             break;
@@ -42,11 +42,11 @@ const animal = (props) => (
                             break;
                             case "5" : colorBtn="btn-info";
                             break;
-                            default : colorBtn = "btn-secondary";//Si on a pas de continent, on lui attribue la couleur secondaire
+                            default : colorBtn = "btn-secondary";
                         }
                         return <Bouton typeBtn={colorBtn} css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
-                    })//Quand on est ds une fonction map, on doit obligatoirement ajouter la key
-                }    {/*  //Comme on a defini une props.css ds le composant Bouton, on ne pourra pas mettre className mais à la place css=   */}
+                    })
+                }
             </div> 
         </div>
     </>

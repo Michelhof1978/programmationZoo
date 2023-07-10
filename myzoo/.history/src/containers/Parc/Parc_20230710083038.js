@@ -23,7 +23,7 @@ class  Parc extends Component{//Récupération des données et instalation du mo
         return (
             <>
             <TitreH1 bgColor="bg-success">Les animaux du parc</TitreH1>
-            <div className='container-fluid'>
+            <div className='container6FLUID'>
               
             <div className="row no-gutters">
                         {

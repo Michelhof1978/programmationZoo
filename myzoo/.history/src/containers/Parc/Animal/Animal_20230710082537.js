@@ -45,8 +45,8 @@ const animal = (props) => (
                             default : colorBtn = "btn-secondary";//Si on a pas de continent, on lui attribue la couleur secondaire
                         }
                         return <Bouton typeBtn={colorBtn} css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
-                    })//Quand on est ds une fonction map, on doit obligatoirement ajouter la key
-                }    {/*  //Comme on a defini une props.css ds le composant Bouton, on ne pourra pas mettre className mais à la place css=   */}
+                    })//Quand on est ds une fonction map, on doit obligatoirement 
+                }
             </div> 
         </div>
     </>

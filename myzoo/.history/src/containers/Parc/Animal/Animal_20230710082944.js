@@ -46,7 +46,7 @@ const animal = (props) => (
                         }
                         return <Bouton typeBtn={colorBtn} css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
                     })//Quand on est ds une fonction map, on doit obligatoirement ajouter la key
-                }    {/*  //Comme on a defini une props.css ds le composant Bouton, on ne pourra pas mettre className mais à la place css=   */}
+                {/*  //Comme on a defini une props.css ds le composant Bouton, on ne pourra pas mettre className mais à la place css=   */}
             </div> 
         </div>
     </>
