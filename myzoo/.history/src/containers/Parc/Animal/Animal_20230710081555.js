@@ -25,7 +25,7 @@ const animal = (props) => (
                          {/* Composant Bouton qui pourra gérer les événements */}
                 <h3>Famille : <Bouton typeBtn="btn-primary">{props.famille.libelleFamille.toUpperCase()}</Bouton></h3>
                 <div>{props.famille.descriptionFamille}</div>
-            </div> 
+            </div> */
              <div className="card-body"> 
                 <h3>Continents : </h3>
                 {
