@@ -31,9 +31,9 @@ const animal = (props) => (
                 {
                     props.continents.map(continent => {//map = parcourir un tableau et récupérer tous les continents et les retourner un à un
                         let colorBtn = "";
-                        switch(continent.idContinent){//Suivant l'id du continent que l on va parcourir, on va lui attribuer une couleur
+                        switch(continent.idContinent){){//Suivant l'id du continent que l on va parcourir, on va lui attribuer une couleur
                             case "1" : colorBtn="btn-primary";//Pour les 5 continents, on va lui attribuer une couleur
-                            break;
+                            break;"; 
                             case "2" : colorBtn="btn-danger";
                             break;
                             case "3" : colorBtn="btn-warning";
@@ -47,7 +47,7 @@ const animal = (props) => (
                         return <Bouton typeBtn={colorBtn} css="m-1" key={continent.idContinent}>{continent.libelleContinent}</Bouton>
                     })
                 }
-            </div> 
+            </div> */}
         </div>
     </>
 );

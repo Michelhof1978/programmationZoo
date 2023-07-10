@@ -33,7 +33,7 @@ const animal = (props) => (
                         let colorBtn = "";
                         switch(continent.idContinent){//Suivant l'id du continent que l on va parcourir, on va lui attribuer une couleur
                             case "1" : colorBtn="btn-primary";//Pour les 5 continents, on va lui attribuer une couleur
-                            break;
+                            break;"; 
                             case "2" : colorBtn="btn-danger";
                             break;
                             case "3" : colorBtn="btn-warning";

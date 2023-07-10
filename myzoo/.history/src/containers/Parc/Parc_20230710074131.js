@@ -32,7 +32,7 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                                 return (//Ds chacunes des colonnes indiquées ci-dessous, on va afficher le un certains nombre d animaux suivant la taille de l'écran //key={animal.id} doit être déclaré au plus haut de notre map car sinon, ça va générer des erreurs
                                     //On va afficher tous les infos de l animal par Id avec le spread operator(on enverra toutes les propriétés de l object animal à travers les props), si ce n était qu'une seule info à afficher, on aurait fait: animal.id, animal.nom...
                                     <div className="col-12 col-md-6 col-xl-4" key={animal.id}>
-                                    {/* //ON ENVOIE TOUTES LES PROPRIETES DE L OBJET ANIMAL A TRAVERS LES PROPS GRACE AU SPREAD OPERATOR */}
+                                    
                                         <Animal {...animal}/>
                                     </div>
                                 )

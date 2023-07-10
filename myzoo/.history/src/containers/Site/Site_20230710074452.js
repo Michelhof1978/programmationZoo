@@ -21,7 +21,7 @@ class  Site extends Component{//Composant STATEFUL qui va être gérer par App.j
             <div className='site'>
             <Navbar/>
           <Routes>
-              <Route path="/" element={<Accueil/>}  />
+            <Route path="/" element={<Accueil/>}  />
               <Route path="/animaux" element={<Parc/>}  />
               <Route path="/contact" element={<h1>Page de Contact</h1>}  />
               <Route path="/mentionLegales" element={<h1>Mentions légales</h1>}  />
