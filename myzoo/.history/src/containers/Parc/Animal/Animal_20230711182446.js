@@ -26,14 +26,13 @@ const animal = (props) => (
                 
             {/* CLIQUE SUR BOUTON FILTRE URL props.filtreFamille(props.famille.idFamille)} uniquement*/}
                 <Bouton typeBtn="btn-dark" 
-                        onClick={() =>props.filtreFamille(props.famille.idFamille)}>                {/* Activation de La fonction va se lancer lors du clic et qui permettra l affichage qu on a prévu ds parc.js */}
-                        {/* Activation de La fonction va se lancer lors du clic et qui permettra l affichage qu on a prévu ds parc.js */}
-
+                        onClick={() =>props.filtreFamille(props.famille.idFamille)}>ActivationLa fonction va se lancer lors du clic
                         {props.famille.libelleFamille.toUpperCase()}
                 </Bouton>
             {/* CLIQUE SUR BOUTON FILTRE URL props.filtreFamille(props.famille.idFamille)} uniquement*/}
 
                 </h3>
+               
                
                 <div>{props.famille.descriptionFamille}</div>
             </div> 
@@ -70,12 +69,7 @@ const animal = (props) => (
                             <Bouton 
                                 typeBtn={colorBtn} 
                                 css="m-1" 
-
-                                //CLIQUE SUR BOUTON FILTRE URL ID
-                                //On lance la fonction lors DU clic et va parcourir les continents concernés, c'est celui qu on est en train de parcour avec map ci-dessus
-                                onClick={() => props.filtreContinent(continent.idContinent)}
-                                //FIN CLIQUE SUR BOUTON FILTRE URL ID
-
+                                onClick={() => props.filtreContinent(continent.idContinent)}//On lance la fonction lors du clic pour parcourir les continents
                                 key={continent.idContinent}
                             >
                                 {continent.libelleContinent}

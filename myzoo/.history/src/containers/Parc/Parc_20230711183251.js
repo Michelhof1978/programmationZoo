@@ -24,9 +24,7 @@ class  Parc extends Component{//Récupération des données et instalation du mo
         }
 
         // CLIQUE SUR BOUTON FILTRE URL
-        //GRACEA CES DISTINCTIONS CI DESSOUS ENTRE FAMILLE ET CONTINENT , On est capable d avoir la distinction vers lequel on a cliqué sur le bouton et en même temps à quoi il correspond si c'est l'id famille ou l id continent  
-        //Fonction qui devra SE LANCER SUR LE COMPOSANT ANIMAL lors du clic (spread operator ...Animal) et qui devra récupérer l'id du continent ET AINSI L AFFICHER DS LA CONSOLE
-        handleSelectionFamille = (idFamille) => {
+        handleSelectionFamille = (idFamille) => {//Fonction qui devra SE LANCER SUR LE COMPOSANT ANIMAL lors du clic (spread operator ...Animal) et qui devra récupérer l'id du continent ET AINSI L AFFICHER DS LA CONSOLE
             console.log(`Demande de ${idFamille}`);
         }
         handleSelectionContinent = (idContinent) => {
@@ -54,12 +52,12 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                                     {/* //ON ENVOIE TOUTES LES PROPRIETES DE L OBJET ANIMAL A TRAVERS LES PROPS GRACE AU SPREAD OPERATOR */}
                                         <Animal {...animal} 
 
-                                        //CLIQUE SUR BOUTON FILTRE URL ID
+                                        //CLIQUE SUR BOUTON FILTRE 
                                          //On va créer une propriété filtreFamille et va transférer la référence de l objet en lui même avec THIS
                                         filtreFamille={this.handleSelectionFamille}
                                         filtreContinent={this.handleSelectionContinent}
                                         //On va pouvoir utiliser ds ANIMAL la référence de ce filtre 
-                                       //FIN CLIQUE SUR BOUTON FILTRE URL ID
+                                       //FIN CLIQUE SUR BOUTON FILTRE
                                         
 
                                         />  

@@ -72,8 +72,7 @@ const animal = (props) => (
                                 css="m-1" 
 
                                 //CLIQUE SUR BOUTON FILTRE URL ID
-                                //On lance la fonction lors DU clic et va parcourir les continents concernés, c'est celui qu on est en train de parcour avec map ci-dessus
-                                onClick={() => props.filtreContinent(continent.idContinent)}
+                                onClick={() => props.filtreContinent(continent.idContinent)}//On lance la fonction lors DU clic et va parcourir les continents concerné
                                 //FIN CLIQUE SUR BOUTON FILTRE URL ID
 
                                 key={continent.idContinent}

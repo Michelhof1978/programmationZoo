@@ -24,9 +24,7 @@ class  Parc extends Component{//Récupération des données et instalation du mo
         }
 
         // CLIQUE SUR BOUTON FILTRE URL
-        //GRACEA CES DISTINCTIONS CI DESSOUS ENTRE FAMILLE ET CONTINENT , On est capable d avoir la distinction vers lequel on a cliqué sur le bouton et en même temps à quoi il correspond si c'est l'id famille ou l id continent  
-        //Fonction qui devra SE LANCER SUR LE COMPOSANT ANIMAL lors du clic (spread operator ...Animal) et qui devra récupérer l'id du continent ET AINSI L AFFICHER DS LA CONSOLE
-        handleSelectionFamille = (idFamille) => {
+        handleSelectionFamille = (idFamille) => {//Fonction qui devra SE LANCER SUR LE COMPOSANT ANIMAL lors du clic (spread operator ...Animal) et qui devra récupérer l'id du continent ET AINSI L AFFICHER DS LA CONSOLE
             console.log(`Demande de ${idFamille}`);
         }
         handleSelectionContinent = (idContinent) => {
@@ -50,18 +48,15 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                                 return (//Ds chacunes des colonnes indiquées ci-dessous, on va afficher le un certains nombre d animaux suivant la taille de l'écran //key={animal.id} doit être déclaré au plus haut de notre map car sinon, ça va générer des erreurs
                                     //On va afficher tous les infos de l animal par Id avec le spread operator(on enverra toutes les propriétés de l object animal à travers les props), si ce n était qu'une seule info à afficher, on aurait fait: animal.id, animal.nom...
                                     <div className="col-12 col-md-6 col-xl-4" key={animal.id}>
-                                    
                                     {/* //ON ENVOIE TOUTES LES PROPRIETES DE L OBJET ANIMAL A TRAVERS LES PROPS GRACE AU SPREAD OPERATOR */}
                                         <Animal {...animal} 
-
-                                        //CLIQUE SUR BOUTON FILTRE URL ID
+                                        
+                                        //CLIQUE SUR BOUTON FILTRE
                                          //On va créer une propriété filtreFamille et va transférer la référence de l objet en lui même avec THIS
                                         filtreFamille={this.handleSelectionFamille}
                                         filtreContinent={this.handleSelectionContinent}
-                                        //On va pouvoir utiliser ds ANIMAL la référence de ce filtre 
-                                       //FIN CLIQUE SUR BOUTON FILTRE URL ID
-                                        
-
+                                        //On va pouvoir ces références du filtre 
+                                       //FIN CLIQUE SUR BOUTON FILTRE
                                         />  
 
                                         
