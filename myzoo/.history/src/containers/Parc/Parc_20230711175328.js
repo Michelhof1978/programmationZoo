@@ -52,7 +52,7 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                                         <Animal {...animal} 
                                         
                                         //CLIQUE SUR BOUTON FILTRE
-                                         //On va créer une propriété filtreFamille et va transférer la référence de cette fonction 
+                                        {/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
                                         filtreFamille={this.handleSelectionFamille}
                                         filtreContinent={this.handleSelectionContinent}
                                        //FIN CLIQUE SUR BOUTON FILTRE

@@ -41,16 +41,11 @@ const animal = (props) => (
                             case 3 :
                              colorBtn="btn-warning";
                             break;
-
-                            case 4 :
-                             colorBtn="btn-success";
-                            break;
-
-                            case 5 : 
                             
-                            colorBtn="btn-info";
+                            case 4 : colorBtn="btn-success";
                             break;
-                            
+                            case 5 : colorBtn="btn-info";
+                            break;
                             default : colorBtn = "btn-secondary";//Si on n'a pas de continent, on lui attribue la couleur secondaire
                         }
                         return (

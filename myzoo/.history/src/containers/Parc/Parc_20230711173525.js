@@ -23,18 +23,19 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                 });
         }
 
-        // CLIQUE SUR BOUTON FILTRE URL
-        handleSelectionFamille = (idFamille) => {//Fonction qui devra SE LANCER SUR LE COMPOSANT ANIMAL lors du clic (spread operator ...Animal) et qui devra récupérer l'id du continent ET AINSI L AFFICHER DS LA CONSOLE
+        //CLIQUE SUR BOUTON FILTRE
+        handleSelectionFamille = (idFamille) => {//Fonction qui devra se lancer lors du clic sur bouton et devra transferer cette fonction au niveau du composant Animal (spread operator ...Animal) et qui devra récupérer l'id de la famille
             console.log(`Demande de ${idFamille}`);
         }
-        handleSelectionContinent = (idContinent) => {
+
+        handleSelectionContinent = (idContinent) => {//Fonction qui devra SE LANCER SUR LE COMPPOSANT ANIMAL lors du clic sur bouton et devra transferer cette fonction au niveau du compo(spread operator ...Animal) et qui devra récupérer l'id du continent ET AINSI L AFFICHER DS LA CONSOLE
             console.log (`Demande de ${idContinent}`);
-       //FIN CLIQUE SUR BOUTON FILTRE URL
+       
         }
-             render() 
-        
-           
-              {
+      
+            render() 
+              //FIN CLIQUE SUR BOUTON FILTRE
+            {
                 
         return (
             <>
@@ -51,14 +52,11 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                                     {/* //ON ENVOIE TOUTES LES PROPRIETES DE L OBJET ANIMAL A TRAVERS LES PROPS GRACE AU SPREAD OPERATOR */}
                                         <Animal {...animal} 
                                         
-                                        //CLIQUE SUR BOUTON FILTRE
-                                         //On va créer une propriété filtreFamille et va transférer la référence de cette fonction 
                                         filtreFamille={this.handleSelectionFamille}
-                                        filtreContinent={this.handleSelectionContinent}
-                                       //FIN CLIQUE SUR BOUTON FILTRE
-                                        />  
-
                                         
+                                        filtreContinent={this.handleSelectionContinent}
+
+                                        />{/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
                                     </div>
                                 )
                             })

@@ -51,8 +51,8 @@ class  Parc extends Component{//Récupération des données et instalation du mo
                                     {/* //ON ENVOIE TOUTES LES PROPRIETES DE L OBJET ANIMAL A TRAVERS LES PROPS GRACE AU SPREAD OPERATOR */}
                                         <Animal {...animal} 
                                         
-                                        //CLIQUE SUR BOUTON FILTRE
-                                         //On va créer une propriété filtreFamille et va transférer la référence de cette fonction 
+                                        
+                                        {/* //On va créer une propriété filtreFamille et va transférer la référence de cette fonction */}
                                         filtreFamille={this.handleSelectionFamille}
                                         filtreContinent={this.handleSelectionContinent}
                                        //FIN CLIQUE SUR BOUTON FILTRE
