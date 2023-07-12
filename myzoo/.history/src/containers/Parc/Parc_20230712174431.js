@@ -82,13 +82,11 @@ class  Parc extends Component{
                                 //FIN CLIQUE SUR BOUTON FILTRE URL ID
                                         
 
-                                        />  
-
-                                        
+                                        />   
                                     </div>
-                                )
-                            })
-                        }
+                                
+                                    ))}
+                        
                     </div>
 
             </div>

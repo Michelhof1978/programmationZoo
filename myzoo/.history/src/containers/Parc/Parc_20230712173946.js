@@ -28,7 +28,7 @@ class  Parc extends Component{
     //catch va permettre d afficher les erreur en détail s'il y en a
         .catch(error => {
              console.log(error);
-             })
+             });
 
 
 }   

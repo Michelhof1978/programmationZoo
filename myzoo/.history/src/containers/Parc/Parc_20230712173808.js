@@ -21,10 +21,8 @@ class  Parc extends Component{
 //Les données récupérées vont maintenant être traitées
         .then(reponse => { 
     // console.log(reponse);
-    this.setState({animaux:Object.values(reponse.data)});//Fonction setState qui va permettre de mettre à jour le composant et de mettre à jours la propriété animaux de notre state, on va donc modifier la partie animauxpour y mettre  les données  que l on va récupérer ds reponse.data//sans Object.values , le rendu des données sera sous format object et grâce à Object.values, il retournera un tableau
+    this.setState({animaux:Object.values(reponse.data)})//Fonction setState qui va permettre de mettre à jour le composant et de mettre à jours la propriété animaux de notre state, on va donc modifier la partie animauxpour y mettre  les données  que l on va récupérer ds reponse.data//sans Object.values , le rendu des données sera sous format object et grâce à Object.values, il retournera un tableau
 
-})
-        
     //catch va permettre d afficher les erreur en détail s'il y en a
         .catch(error => {
              console.log(error);

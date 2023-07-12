@@ -86,9 +86,9 @@ class  Parc extends Component{
 
                                         
                                     </div>
-                                )
-                            })
-                        }
+                                
+                                    ))}
+                        
                     </div>
 
             </div>
